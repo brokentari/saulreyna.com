@@ -1,0 +1,27 @@
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: inherit;
+  position: relative;
+}
+
+.scrolling-text {
+  display: inline-block;
+  min-width: fit-content;
+  animation: text-scroll 10s linear infinite;
+  will-change: transform;
+  width: inherit;
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes text-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
