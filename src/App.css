@@ -6,7 +6,7 @@
 }
 
 body {
-  cursor: url('pokeball.png'), auto;
+  cursor: url('/pokeball.png'), auto;
 }
 
 .logo {
