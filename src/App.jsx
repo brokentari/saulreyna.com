@@ -6,6 +6,7 @@ import { Environment, OrbitControls, Html, useProgress } from '@react-three/drei
 import { GLTFLoader } from 'three/examples/jsm/Addons.js'
 import { Suspense } from 'react'
 import ScrollingText from './ScrollingText'
+import Button from './Button'
 
 
 function Loader() {
@@ -37,6 +38,9 @@ function App() {
             <Environment preset="forest" background={false} />
           </Suspense>
         </Canvas>
+      </div>
+      <div style={{ position: "relative", height: "100vh", width: "100%" }}>
+        <Button />
       </div>
     </>
   );
